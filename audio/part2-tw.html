@@ -1,0 +1,254 @@
+﻿<html lang="zh-tw">
+	<head>
+<link rel="shortcut icon" href="../favicon.ico">
+		<title>《人生的意義》中文版 下冊</title>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui">
+		<meta itemprop="name" content="dd">
+		<meta itemprop="description" content="dd">
+		<meta itemprop="image">
+		<link rel="stylesheet" type="text/css" href="css/play.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+
+		<script type="text/javascript">
+			function browserRedirect() {
+				var sUserAgent = navigator.userAgent.toLowerCase();
+				var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+				var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+				var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+				var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+				var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+				var bIsAndroid = sUserAgent.match(/android/i) == "android";
+				var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+				var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+				if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+
+				} else {
+					//window.location= 'http://'; 
+				}
+			}
+			browserRedirect();
+		</script>
+	</head>
+	<body bgcolor="#000000">
+		<div class="wrap youbian" id="main_box" style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; -webkit-transform: translate3d(0px, 0px, 0px);">
+			<div class="box">
+				<div class="flex_box">
+					<div class="flex_item">
+						<div class="song_info">
+							<div class="cont">
+								<h1 class="song" id="song_name"><span></span></h1>
+								<p class="singer" id="goSinger"><span></span><i class="arrow"></i></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="album_cover">
+						<div class="cover_container">
+							<img id="album_pic" onerror="this.src = 'images/novel_cover.jpg'; this.onerror=null;" onload="canShowLrc = true;imgOnloadTime=(+new Date())"
+							 src="images/novel_cover.jpg">
+						</div>
+					</div>
+
+					<div class="flex_item">
+						<div class="lyric" id="lyric">
+							<div class="cont" id="lyric_txt">
+								<div class="txt" id="lyricDiv" style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; -webkit-transform: translate3d(0px, -24px, 0px); ">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="love" id="likeDiv">
+					<a href="javascript:;" class="icon_loved" id="icon_love" style="display:none;"><i>Favorite</i></a>
+				</div>
+			</div>
+			<div class="play_bar">
+				<div class="progress" id="progress">
+					<div class="bar"></div>
+					<div class="has_load" id="play_loading" style="-webkit-transform:translateX(0%);"></div>
+					<div class="has_play" id="play_on" style="-webkit-transform: translateX(0%); "><span style="" id="btn_pro"><i></i></span></div>
+				</div>
+				<p class="play_time"><time id="currentTime">00:00</time><time id="totalTime">00:00</time></p>
+			</div>
+			<div class="btns"><a href="#"></a></div>
+			<div class="kognzhianniu">
+				<a href="javascript:;" class="btn_play" id="cover"><span></span><i></i></a>
+				<a href="javascript:;" class="btn_play play_left" id="play_left"><span></span><i></i></a>
+				<a href="javascript:;" class="btn_play play_right" id="play_right"><span></span><i></i></a>
+			</div>
+			<div class="gradient_mask"></div>
+			<div class="bg" id="album_pic2" style="background-image: url(images/novel_cover.jpg); "></div>
+			<div class="bg_mask" style="opacity:0.6;"></div>
+			<div id="tipsbox" class="tips success"></div>
+		</div>
+
+		<div class="wrap zuobian" style="z-index: 0;-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; -webkit-transform: translate3d(-100%, 0px, 0px); ">
+			<div class="box liebiao">
+				<ul id="ul">
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/41.mp3" data-lrc="./audio-tw/41.lrc"><b></b><span>「第四十一章」不明天體</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/42.mp3" data-lrc="./audio-tw/42.lrc"><b></b><span>「第四十二章」天外訊號</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/43.mp3" data-lrc="./audio-tw/43.lrc"><b></b><span>「第四十三章」鏡中故人</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/44.mp3" data-lrc="./audio-tw/44.lrc"><b></b><span>「第四十四章」撲朔迷離</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/45.mp3" data-lrc="./audio-tw/45.lrc"><b></b><span>「第四十五章」時空折射</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/46.mp3" data-lrc="./audio-tw/46.lrc"><b></b><span>「第四十六章」生物演算</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/47.mp3" data-lrc="./audio-tw/47.lrc"><b></b><span>「第四十七章」他者連線</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/48.mp3" data-lrc="./audio-tw/48.lrc"><b></b><span>「第四十八章」弦外有音</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/49.mp3" data-lrc="./audio-tw/49.lrc"><b></b><span>「第四十九章」超級金屬</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/50.mp3" data-lrc="./audio-tw/50.lrc"><b></b><span>「第五十章」星空幕布</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/51.mp3" data-lrc="./audio-tw/51.lrc"><b></b><span>「第五十一章」不速之客</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/52.mp3" data-lrc="./audio-tw/52.lrc"><b></b><span>「第五十二章」天機洩露</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/53.mp3" data-lrc="./audio-tw/53.lrc"><b></b><span>「第五十三章」暗意識體</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/54.mp3" data-lrc="./audio-tw/54.lrc"><b></b><span>「第五十四章」中央起義</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/55.mp3" data-lrc="./audio-tw/55.lrc"><b></b><span>「第五十五章」將計就計</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/56.mp3" data-lrc="./audio-tw/56.lrc"><b></b><span>「第五十六章」人性方舟</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/57.mp3" data-lrc="./audio-tw/57.lrc"><b></b><span>「第五十七章」潛能測序</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/58.mp3" data-lrc="./audio-tw/58.lrc"><b></b><span>「第五十八章」集群腦區</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/59.mp3" data-lrc="./audio-tw/59.lrc"><b></b><span>「第五十九章」後發制人</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/60.mp3" data-lrc="./audio-tw/60.lrc"><b></b><span>「第六十章」逝者使命</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/61.mp3" data-lrc="./audio-tw/61.lrc"><b></b><span>「第六十一章」意識牢籠</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/62.mp3" data-lrc="./audio-tw/62.lrc"><b></b><span>「第六十二章」棋逢對手</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/63.mp3" data-lrc="./audio-tw/63.lrc"><b></b><span>「第六十三章」六位一體</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/64.mp3" data-lrc="./audio-tw/64.lrc"><b></b><span>「第六十四章」自然法則</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/65.mp3" data-lrc="./audio-tw/65.lrc"><b></b><span>「第六十五章」繁星彼岸</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/66.mp3" data-lrc="./audio-tw/66.lrc"><b></b><span>「第六十六章」應急預案</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/67.mp3" data-lrc="./audio-tw/67.lrc"><b></b><span>「第六十七章」生死防線</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/68.mp3" data-lrc="./audio-tw/68.lrc"><b></b><span>「第六十八章」自行變軌</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/69.mp3" data-lrc="./audio-tw/69.lrc"><b></b><span>「第六十九章」斷翅求生</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/70.mp3" data-lrc="./audio-tw/70.lrc"><b></b><span>「第七十章」殊途同歸</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/71.mp3" data-lrc="./audio-tw/71.lrc"><b></b><span>「第七十一章」忍者現身</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/72.mp3" data-lrc="./audio-tw/72.lrc"><b></b><span>「第七十二章」宇宙之上</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/73.mp3" data-lrc="./audio-tw/73.lrc"><b></b><span>「第七十三章」終極球賽</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/74.mp3" data-lrc="./audio-tw/74.lrc"><b></b><span>「第七十四章」同舟共濟</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/75.mp3" data-lrc="./audio-tw/75.lrc"><b></b><span>「第七十五章」聖母贊歌</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/76.mp3" data-lrc="./audio-tw/76.lrc"><b></b><span>「第七十六章」熵的贖回</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/77.mp3" data-lrc="./audio-tw/77.lrc"><b></b><span>「第七十七章」開天辟地</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/78.mp3" data-lrc="./audio-tw/78.lrc"><b></b><span>「第七十八章」末位乘客</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/79.mp3" data-lrc="./audio-tw/79.lrc"><b></b><span>「第七十九章」白夜降臨</span></li>
+					</a>
+					<a href="javascript:void(0);">
+						<li data-name="./audio-tw/80.mp3" data-lrc="./audio-tw/80.lrc"><b></b><span>「第八十章」破繭成蝶</span></li>
+					</a>
+				</ul>
+			</div>
+			<div class="gradient_mask"></div>
+			<div class="bg" id="album_pic2" style="background-image:url(images/novel_cover.jpg);"></div>
+			<div class="bg_mask" style="opacity:0.6;"></div>
+
+			<div id="tipsbox" class="tips success"></div>
+		</div>
+
+		<div class="kongzhi">
+			<div class="diyige">
+				<a href="#" class="le">1</a>
+				<a href="#" class="kongzhi_2 ri">2</a>
+			</div>
+		</div>
+
+		<audio id="audio" height="0" width="0" src=""></audio>
+		<script type="text/javascript" src="./js/min.music.js"></script>
+		<script tyoe="text/javascript">
+			wyw = $(window).width() / 2;
+			$(".diyige").css("margin-left", wyw - 10 + "px")
+			$(".diyige a").click(function() {
+				danqian = $(this).text();
+				if (danqian == 1) {
+					$(".zuobian").css("-webkit-transform", "translate3d(0, 0px, 0px)")
+					$(".youbian").css("-webkit-transform", "translate3d(100%, 0px, 0px)")
+					$(".diyige a").removeClass("kongzhi_2")
+					$(this).addClass("kongzhi_2")
+					$(".zuobian").css("z-index", "1")
+					$(".youbian").css("z-index", "0")
+				} else {
+					$(".zuobian").css("-webkit-transform", "translate3d(-100%, 0px, 0px)")
+					$(".youbian").css("-webkit-transform", "translate3d(0, 0px, 0px)")
+					$(".diyige a").removeClass("kongzhi_2")
+					$(this).addClass("kongzhi_2")
+					$(".zuobian").css("z-index", "0")
+					$(".youbian").css("z-index", "1")
+				}
+			})
+		</script>
+	</body>
+</html>
